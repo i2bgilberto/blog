@@ -1,14 +1,27 @@
 ---
 const { platform, username } = Astro.props;
+import { Icon } from "astro-icon/components";
 ---
 
-<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+<a href=`http://${platform}.com/${username}`><Icon name=`${platform}` /></a>
 
 <style>
   a {
-    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    border: 2px solid #373737;
+    border-radius: 50%;
+  }
+
+  a svg {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  a:hover {
+    background-color: #373737;
     color: white;
-    background-color: #4c1d95;
-    text-decoration: none;
   }
 </style>

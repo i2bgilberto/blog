@@ -83,10 +83,14 @@ h1 {
 }
 
 html.dark {
-    background-color: #0d0950;
+    background-color: #373737;
     color: #fff;
-}
 
-.dark .nav-links a {
-    color: #fff;
+    & .nav-links a {
+        color: #fff;
+    }
+
+    & footer a {
+        color: #fff;
+    }
 }
