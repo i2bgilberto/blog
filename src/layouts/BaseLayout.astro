@@ -2,11 +2,8 @@
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import Hamburger from "../components/Hamburger.astro";
+import ThemeIcon from "../components/ThemeIcon.astro";
 import "../styles/global.css";
-<<<<<<< HEAD
-
-=======
->>>>>>> 250ebf7ee7890fd7134f45da2dc074b03e44372c
 const { pageTitle } = Astro.props;
 ---
 
@@ -19,6 +16,7 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
   </head>
   <body>
+    <ThemeIcon />
     <Hamburger />
     <Navigation />
     <slot />
