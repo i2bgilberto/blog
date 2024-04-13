@@ -20,6 +20,16 @@ h1 {
     font-size: 2.5rem;
 }
 
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 /* nav styles */
 .hamburger {
     padding-right: 20px;
