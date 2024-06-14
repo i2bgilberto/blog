@@ -57,16 +57,17 @@ h1 {
     display: none;
     font-size: 1rem;
 
+
     & a {
         text-align: center;
         text-decoration: none;
         font-weight: bold;
         text-transform: uppercase;
+        margin: 5px;
     }
 
-    & a:hover,
-    a:focus {
-        border-bottom: 2px solid #fff;
+    & a:hover {
+        border-bottom: 1px solid #000;
     }
 
 
@@ -86,7 +87,10 @@ h1 {
     .nav-links {
         color: #000;
         display: flex;
-        justify-content: right;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+
 
 
         & a {
@@ -96,9 +100,7 @@ h1 {
             color: #000;
         }
 
-        & a:last-child {
-            margin-right: 50px;
-        }
+
     }
 
     .hamburger {
@@ -115,9 +117,18 @@ html.dark {
         color: #fff;
     }
 
+    & .nav-links a:hover {
+        border-bottom: 1px solid #fff;
+    }
+
     & footer a {
         color: #fff;
         border: #fff solid 2px;
+    }
+
+    & footer a:hover {
+        background-color: #fff;
+        color: #000;
     }
 
     & .horizontal,
