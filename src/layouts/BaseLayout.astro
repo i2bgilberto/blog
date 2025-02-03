@@ -21,11 +21,12 @@ const { pageTitle } = Astro.props;
     <div class="logo">
       <Icon name={"MainLogo"} size={100} />
     </div>
+
+    <ThemeIcon />
+    <Navigation />
+    <slot />
+    <Footer />
   </body>
-  <ThemeIcon />
-  <Navigation />
-  <slot />
-  <Footer />
   <script>
     import "../scripts/menu.js";
   </script>
